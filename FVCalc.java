@@ -4,9 +4,10 @@ public class FVCalc {
 		// Replace this comment with your code
 
 		int current_Value = Integer.parseInt(args[0]);
-		int interest_rate = Integer.parseInt(args[1]);
+		double interest_rate = Double.parseDouble(args[1]);
 		int years = Integer.parseInt(args[2]);
 
+		
 		//here im converting it to a percentage
 		double rate = interest_rate / 100.0;
 
