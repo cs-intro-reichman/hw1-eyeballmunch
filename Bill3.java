@@ -15,7 +15,7 @@ public class Bill3 {
 		double ammount = Math.ceil(bill/3);
 		
 		//here i will create my printline
-		System.out.println("Dear " + name3 + ", " + name2 + ", and" + name1 + ": pay " +(ammount) +" Shekels each."  );
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " +(ammount) +" Shekels each."  );
 
 	    // Replace this comment with the rest of your code   
 	}
