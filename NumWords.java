@@ -4,13 +4,15 @@ public class NumWords {
 	    // Replace this comment with your code
 
 		// in this question im going to use mod and deviding by ten 
-
+		
 		int Value = Integer.parseInt(args[0]);
 
 		if (Value == 0) {
             System.out.println("Digits of the number: 0");
             return;
         }
+
+		/* 
 
 		// here i will run on the digits, use mod 10 to and store it in a temporary value called digit i will use it and then remove the last number by deviding by 10
 
@@ -21,5 +23,21 @@ public class NumWords {
             System.out.println(digit);         // Print the digit
             Value /= 10;  // Remove the last digit
         }
+		*/
+
+		// did it the easy way in the end 
+		
+		int number = Integer.parseInt(args[0]);
+
+        // Extract hundreds, tens, and ones
+        int hundreds = (number / 100) % 10;
+        int tens = (number / 10) % 10;
+        int ones = number % 10;
+
+        // Print the result
+        System.out.println(hundreds + " hundreds, " + tens + " tens, and " + ones + " ones.");
+
+
+
 	}
 }
