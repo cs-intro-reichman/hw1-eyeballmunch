@@ -26,15 +26,20 @@ public class NumWords {
 		*/
 
 		// did it the easy way in the end 
-		
-		int number = Integer.parseInt(args[0]);
 
-        // Extract hundreds, tens, and ones
-        int hundreds = (number / 100) % 10;
-        int tens = (number / 10) % 10;
-        int ones = number % 10;
+		 int num = Integer.parseInt(args[0]);
 
-        // Print the result
+        // Extract ones
+        int ones = num % 10;
+        num = num / 10;  // remove the ones digit
+
+        // Extract tens
+        int tens = num % 10;
+        num = num / 10;  // remove the tens digit
+
+        // Whatever is left is hundreds (could be multi-digit)
+        int hundreds = num;
+
         System.out.println(hundreds + " hundreds, " + tens + " tens, and " + ones + " ones.");
 
 
