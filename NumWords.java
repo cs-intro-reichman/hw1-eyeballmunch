@@ -5,13 +5,6 @@ public class NumWords {
 
 		// in this question im going to use mod and deviding by ten 
 		
-		int Value = Integer.parseInt(args[0]);
-
-		if (Value == 0) {
-            System.out.println("Digits of the number: 0");
-            return;
-        }
-
 		/* 
 
 		// here i will run on the digits, use mod 10 to and store it in a temporary value called digit i will use it and then remove the last number by deviding by 10
